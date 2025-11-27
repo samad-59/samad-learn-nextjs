@@ -1,0 +1,115 @@
+/* layout root and old helper classes retained */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App specific styles to match the screenshot */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #eaeaea;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.nav {
+  display: flex;
+  gap: 2.25rem;
+  align-items: center;
+  padding: 0.75rem 2rem;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #cfcfcf;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 150ms, border-color 150ms, background-color 150ms;
+}
+
+.nav-btn:hover {
+  color: #ffffff;
+}
+
+.nav-btn.active {
+  color: #9aa0ff;
+  background: linear-gradient(180deg, rgba(124,95,255,0.06), rgba(124,95,255,0.02));
+  box-shadow: 0 0 0 2px rgba(124,95,255,0.12) inset, 0 6px 14px rgba(0,0,0,0.6);
+  border: 1px solid rgba(124,95,255,0.6);
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3.5rem 1rem;
+}
+
+.hero-title {
+  font-size: 3.4rem;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.hero-sub {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 560px) {
+  .nav { gap: 1rem; }
+  .hero-title { font-size: 2.2rem; }
+}
